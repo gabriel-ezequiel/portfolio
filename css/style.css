@@ -1,0 +1,80 @@
+.row {
+    margin-right: 0%;
+    margin-left: 0%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-4 {
+        display: grid;
+    }
+    .col-md-4 {
+        display: grid;
+    }
+}
+
+@media (min-width: 650px) {
+    .col-m-4 {
+        display: grid;
+        flex: 0 0 auto;
+        width: 33.333333%;
+    }
+    .navbar-expand-m .navbar-toggler {
+        display: none;
+    }
+    .navbar-expand-m .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .navbar-expand-m {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+    }
+    .navbar-expand-m .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-m .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+    .navbar-expand-m .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+.card {
+    cursor:pointer;
+}
+
+.card-text {
+    overflow: hidden; /* Removendo barra de rolagem */
+    text-overflow: ellipsis; /* Adicionando "..." ao final do texto */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Quantidade de linhas que você quer mostrar */
+    -webkit-box-orient: vertical;
+}
+
+.markdown-body {
+    padding: 1pc;
+}
+
+.page-link {
+    cursor: pointer;
+}
+
+body {
+    background-image: url("fundo.jpg");
+    background-position: center;
+    background-attachment: fixed !important;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+}
+
+.fundo {
+    color: var(--color-fg-default);
+    background-color: var(--color-canvas-default);
+    padding-bottom: 1px;
+    max-width: 800px;
+    margin: auto;
+}
