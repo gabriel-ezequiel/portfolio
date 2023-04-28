@@ -148,7 +148,7 @@ function createCards(repos, start, end) {
 
     var cardImg = document.createElement("img");
     cardImg.classList.add("card-img-top");
-    cardImg.src = 'fundo.jpg';
+    cardImg.src = 'imgs/fundo.jpg';
     cardImg.alt = "...";
     card.appendChild(cardImg);
 
