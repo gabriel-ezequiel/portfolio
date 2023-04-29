@@ -63,7 +63,7 @@
 }
 
 body {
-    background-image: url("/imgs/fundo.jpg");
+    background-image: url("./imgs/fundo.jpg");
     background-position: center;
     background-attachment: fixed !important;
     background-size: cover;
