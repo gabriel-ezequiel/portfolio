@@ -1,21 +1,23 @@
-var user = "Gabriel2080"
-var page = 1
-var page_api = 0
-var per_page = 30
-var max_per_repos_api = 90
-var num_repos = 0
-var repos = []
+var user = "Gabriel2080";
+var page = 1;
+var page_api = 0;
+var per_page = 30;
+var max_per_repos_api = 90;
+var num_repos = 0;
+var repos = [];
+var searchRepos = [];
+var searchInput = "";
 var converter = new showdown.Converter();
 showdown.setFlavor('github');
 
-async function getAPI2(url) {
+async function getAPI(url) {
   const response = await fetch(url);
   const data = await response.json();
   return data;
 }
 
 function getRepos() {
-  getAPI2(`https://api.github.com/users/${user}/repos?per_page=${max_per_repos_api}&page=${++page_api}&sort=created&direction=desc`).then(data => {
+  getAPI(`https://api.github.com/users/${user}/repos?per_page=${max_per_repos_api}&page=${++page_api}&sort=created&direction=desc`).then(data => {
     repos = repos.concat(data);
     num_repos += data.length;
   }).catch(err => {
@@ -24,7 +26,7 @@ function getRepos() {
 }
 
 function createCarousel() {
-  getAPI2(`https://api.github.com/users/${user}/starred?per_page=5`).then(data => {
+  getAPI(`https://api.github.com/users/${user}/starred?per_page=5`).then(data => {
     if (data.length === 0) {
       return;
     }
@@ -301,8 +303,13 @@ function back() {
 }
 
 function search() {
-
   var input = document.getElementById("search").value;
+  getAPI(`https://api.github.com/search/repositories?q=user%3A${user}+${input}`).then(data => {
+    searchRepos = data;
+    createCards(searchRepos.items, 0, per_page);
+  }).catch(err => {
+    console.log(err);
+  });
 
   console.log(input);
 }
@@ -314,5 +321,7 @@ function main() {
     createCards(repos, 0, per_page);
   }, 1000);
 }
-  
+
 main();
+
+// alert("developing site")
