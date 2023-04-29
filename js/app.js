@@ -322,6 +322,6 @@ function main() {
   }, 1000);
 }
 
-main();
+alert("developing site")
 
-// alert("developing site")
+main();
