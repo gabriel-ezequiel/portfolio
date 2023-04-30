@@ -26,8 +26,8 @@ function getRepos() {
 }
 
 function createCarousel() {
-  getAPI(`https://api.github.com/users/${user}/starred?per_page=5`).then(data => {
-    if (data.length === 0) {
+  getAPI(`https://api.github.com/search/repositories?q=user%3Ao=desc&per_page=5&q=user%3A${user}&s=stars&type=Repositories`).then(data => {
+    if (data.items[0].stargazers_count === 0) {
       return;
     }
     var carousel = document.getElementById("carousel");
@@ -42,7 +42,10 @@ function createCarousel() {
     var active = true;
     var num = 0;
 
-    data.forEach(element => {
+    data.items.forEach(element => {
+      if (element.stargazers_count === 0) {
+        return;
+      }
       var button = document.createElement("button");
       button.setAttribute("type", "button");
       button.setAttribute("data-bs-target", "#carousel");
@@ -63,7 +66,7 @@ function createCarousel() {
 
       var img = document.createElement("img");
       img.classList.add("d-block", "w-100");
-      img.src = 'fundo.jpg';
+      img.src = 'imgs/fundo.jpg';
       img.alt = "...";
       carouselItem.appendChild(img);
 
@@ -82,6 +85,7 @@ function createCarousel() {
       carouselItem.appendChild(carouselCaption);
       carouselInner.appendChild(carouselItem);
     });
+
     carousel.appendChild(carouselIndicators);
     carousel.appendChild(carouselInner);
 
