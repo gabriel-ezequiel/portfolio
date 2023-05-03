@@ -286,6 +286,16 @@ function createDetails(nameRepo,defaultBranch) {
     var a = await response.text();
 
     details.innerHTML = converter.makeHtml(a);
+
+    var div = document.createElement("div");
+    div.classList.add("d-grid", "gap-2", "d-md-flex", "justify-content-md-center");
+
+    var back = document.createElement("button");
+    back.classList.add("btn", "btn-primary");
+    back.textContent = "Back";
+    back.onclick = back;
+    div.appendChild(back);
+    details.appendChild(div);
   }).catch(err => {
     console.log(err);
   });
