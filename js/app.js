@@ -293,7 +293,7 @@ function createDetails(nameRepo,defaultBranch) {
     var back = document.createElement("button");
     back.classList.add("btn", "btn-primary");
     back.textContent = "Back";
-    back.onclick = back;
+    back.onclick = backPage;
     div.appendChild(back);
     details.appendChild(div);
   }).catch(err => {
@@ -309,7 +309,7 @@ function project() {
   window.scrollTo(0, 0);
 }
 
-function back() {
+function backPage() {
   var details = document.getElementById("details");
   details.innerHTML = "";
   createCards(repos, per_page*(page-1), per_page*page);
