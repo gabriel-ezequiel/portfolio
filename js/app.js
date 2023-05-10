@@ -65,7 +65,7 @@ function createCarousel() {
       }
 
       var img = document.createElement("img");
-      img.classList.add("d-block", "w-100");
+      img.classList.add("d-block", "w-100", "wide-img");
       img.src = 'imgs/fundo.jpg';
       img.alt = "...";
       carouselItem.appendChild(img);
@@ -153,7 +153,7 @@ function createCards(repos, start, end) {
     };
 
     var cardImg = document.createElement("img");
-    cardImg.classList.add("card-img-top");
+    cardImg.classList.add("card-img-top", "wide-img");
     cardImg.src = 'imgs/fundo.jpg';
     cardImg.alt = "...";
     card.appendChild(cardImg);
