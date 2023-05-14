@@ -66,7 +66,11 @@ function createCarousel() {
 
       var img = document.createElement("img");
       img.classList.add("d-block", "w-100", "wide-img");
-      img.src = 'imgs/fundo.jpg';
+      img.src = `https://raw.githubusercontent.com/${user}/${element.name}/${element.default_branch}/imgs/1.jpeg`;
+      img.onerror = function () {
+        onerror=null;
+        img.src = 'imgs/404NotFound.jpeg';
+      };
       img.alt = "...";
       carouselItem.appendChild(img);
 
@@ -154,7 +158,11 @@ function createCards(repos, start, end) {
 
     var cardImg = document.createElement("img");
     cardImg.classList.add("card-img-top", "wide-img");
-    cardImg.src = 'imgs/fundo.jpg';
+    cardImg.src =  `https://raw.githubusercontent.com/${user}/${element.name}/${element.default_branch}/imgs/1.jpeg`;
+    cardImg.onerror = function () {
+      onerror=null;
+      cardImg.src = 'imgs/404NotFound.jpeg';
+    };
     cardImg.alt = "...";
     card.appendChild(cardImg);
 
