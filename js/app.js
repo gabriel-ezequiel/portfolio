@@ -78,7 +78,7 @@ function createCarousel() {
       carouselCaption.classList.add("carousel-caption", "d-none", "d-sm-block");
 
       var h5 = document.createElement("h5");
-      h5.textContent = element.name;
+      h5.textContent = element.name.replace(/([\w\d])-(?=[\w\d])/g, '$1 ').replace(/(---)/g, ' - ').replace(/^\w/, (l) => l.toUpperCase()); // replace(/\b\w/g, function(l){ return l.toUpperCase() });
 
       var p = document.createElement("p");
       p.textContent = element.description;
@@ -171,8 +171,8 @@ function createCards(repos, start, end) {
 
     var cardTitle = document.createElement("h5");
     cardTitle.classList.add("card-title");
-    cardTitle.textContent = element.name;
-
+    cardTitle.textContent = element.name.replace(/([\w\d])-(?=[\w\d])/g, '$1 ').replace(/(---)/g, ' - ').replace(/^\w/, (l) => l.toUpperCase()); // replace(/\b\w/g, function(l){ return l.toUpperCase() });
+    
     var cardText = document.createElement("p");
     cardText.classList.add("card-text");
     cardText.textContent = element.description;
