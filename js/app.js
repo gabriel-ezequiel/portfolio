@@ -66,7 +66,7 @@ function createCarousel() {
 
       var img = document.createElement("img");
       img.classList.add("d-block", "w-100", "wide-img");
-      img.src = `https://raw.githubusercontent.com/${user}/${element.name}/${element.default_branch}/imgs/1.jpeg`;
+      img.src = `https://raw.githubusercontent.com/${user}/${element.name}/${element.default_branch}/thumbnail/1.jpeg`;
       img.onerror = function () {
         onerror=null;
         img.src = 'imgs/404NotFound.jpeg';
@@ -146,7 +146,7 @@ function createCards(repos, start, end) {
 
   repos.slice(start, end).forEach(element => {
     var col = document.createElement("div");
-    col.classList.add("col-m-4")
+    col.classList.add("col-md-4")
     col.style.padding = "5px";
 
     var card = document.createElement("div");
