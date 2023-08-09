@@ -41,7 +41,7 @@ My portfolio
 [license-shield]: https://img.shields.io/github/license/gabriel-ezequiel/portfolio.svg?style=for-the-badge
 [license-url]: https://github.com/gabriel-ezequiel/portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/gabriel-de-castro-ezequiel{:target="_blank"}
+[linkedin-url]: (https://linkedin.com/in/gabriel-de-castro-ezequiel){:target="_blank"}
 [repo-size-shield]: https://img.shields.io/github/repo-size/gabriel-ezequiel/portfolio?style=for-the-badge
 [open-issues-shield]: https://img.shields.io/github/issues/gabriel-ezequiel/portfolio?style=for-the-badge
 [open-issues-url]: https://github.com/gabriel-ezequiel/portfolio/issues
