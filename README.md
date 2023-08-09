@@ -4,7 +4,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/gabriel-ezequiel/portfolio?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/gabriel-ezequiel/portfolio?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/gabriel-ezequiel/portfolio?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/gabriel-ezequiel/portfolio?style=for-the-badge)
+![Bitbucket open issues](https://github.com/gabriel-ezequiel/portfolio/issues)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gabriel-ezequiel/portfolio?style=for-the-badge)
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -39,7 +39,7 @@ My portfolio
 [issues-shield]: https://img.shields.io/github/issues/gabriel-ezequiel/portfolio.svg?style=for-the-badge
 [issues-url]: https://github.com/gabriel-ezequiel/portfolio/issues
 [license-shield]: https://img.shields.io/github/license/gabriel-ezequiel/portfolio.svg?style=for-the-badge
-[license-url]: https://github.com/gabriel-ezequiel/portfolio/blob/master/LICENSE.txt
+[license-url]: https://github.com/gabriel-ezequiel/portfolio/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: (https://linkedin.com/in/gabriel-de-castro-ezequiel){target="_blank"}
 [repo-size-shield]: https://img.shields.io/github/repo-size/gabriel-ezequiel/portfolio?style=for-the-badge
