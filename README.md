@@ -1,6 +1,6 @@
-<h1 style="text-align: center;">Portfolio</h1>
+<h1 align="center">Portfolio</h1>
 
-<div style="text-align: center;">
+<div align="center">
 <a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors" target="_blank"><img src="https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Contributors"></a>
 <a href="https://github.com/gabriel-ezequiel/portfolio/network/members" target="_blank"><img src="https://img.shields.io/github/forks/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Forks"></a>
 <a href="https://github.com/gabriel-ezequiel/portfolio/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Stargazers"></a>
@@ -14,7 +14,7 @@
 </div>
 
 <!-- contributors -->
-# :handshake: Contribuidores
+# 🤝 Contribuidores
 <a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=gabriel-ezequiel/portfolio" />
 </a>
