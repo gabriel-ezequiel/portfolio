@@ -1,23 +1,37 @@
 <h1 align="center">Portfolio</h1>
 
-![contributors-shield](https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge)
+<!-- ![contributors-shield](https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gabriel-ezequiel/portfolio?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/gabriel-ezequiel/portfolio?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/gabriel-ezequiel/portfolio?style=for-the-badge)
-[![Bitbucket open issues](https://img.shields.io/github/issues/gabriel-ezequiel/portfolio?style=for-the-badge)](https://github.com/gabriel-ezequiel/portfolio/issues)
+[![Bitbucket open issues](https://img.shields.io/github/issues/gabriel-ezequiel/portfolio?style=for-the-badge)](https://github.com/gabriel-ezequiel/portfolio/issues) -->
 
-<p><a href="https://www.youtube.com/seu-canal-youtube-aqui" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a></p>
+<div>
+<a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors" target="_blank"><img src="https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Contributors"></a>
 
-<a href="https://example.com" target="_blank">New Tab</a>
+<a href="https://github.com/gabriel-ezequiel/portfolio/network/members" target="_blank"><img src="https://img.shields.io/github/forks/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Forks"></a>
 
-<a href="https://example.com" target="_blank" rel="noopener noreferrer">New Tab</a>
+<a href="https://github.com/gabriel-ezequiel/portfolio/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Stargazers"></a>
+
+<a href="https://github.com/gabriel-ezequiel/portfolio/issues" target="_blank"><img src="https://img.shields.io/github/issues/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Issues"></a>
+
+<a href="https://github.com/gabriel-ezequiel/portfolio/blob/master/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="MIT License"></a>
+
+<img src="https://img.shields.io/github/repo-size/gabriel-ezequiel/portfolio?style=for-the-badge" alt="Repo Size">
+
+<img src="https://img.shields.io/github/languages/count/gabriel-ezequiel/portfolio?style=for-the-badge" alt="language-count">
+
+<a href="https://github.com/gabriel-ezequiel/portfolio/issues" target="_blank"><img src="https://img.shields.io/github/issues/gabriel-ezequiel/portfolio?style=for-the-badge" alt="Open Issues"></a>
+
+<a href="https://github.com/gabriel-ezequiel/portfolio/pulls" target="_blank"><img src="https://img.shields.io/github/issues-pr/gabriel-ezequiel/portfolio?style=for-the-badge" alt="Open Pull Requests"></a>
+
+<a href="https://linkedin.com/in/gabriel-de-castro-ezequiel" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="LinkedIn"></a>
+
+</div>
 
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gabriel-ezequiel/portfolio?style=for-the-badge)
 
 [![Contributors][contributors-shield]][contributors-url]
-
-<a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors" target="_blank"><img src="https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Contributors"></a>
-
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -27,8 +41,6 @@
 [![Open Issues][open-issues-shield]][open-issues-url]
 [![Open Pull Requests][open-pull-requests-shield]][open-pull-requests-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-![GitHub contributors (via allcontributors.org)](https://img.shields.io/github/all-contributors/gabriel-ezequiel/portfolio/main)
 
 
 # portfolio
