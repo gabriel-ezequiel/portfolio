@@ -9,7 +9,7 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gabriel-ezequiel/portfolio?style=for-the-badge)
 
 [![Contributors][contributors-shield]][contributors-url]
-<a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors"><img src="https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors" target="_blank"><img src="https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Contributors"></a>
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
