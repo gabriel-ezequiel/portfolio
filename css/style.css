@@ -58,6 +58,10 @@
     padding: 1pc;
 }
 
+.markdown-body a {
+    display: inline-flex;
+}
+
 .page-link {
     cursor: pointer;
 }
