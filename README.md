@@ -4,13 +4,12 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/gabriel-ezequiel/portfolio?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/gabriel-ezequiel/portfolio?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/gabriel-ezequiel/portfolio?style=for-the-badge)
-[![Bitbucket open issues](https://img.shields.io/github/issues/gabriel-ezequiel/portfolio?style=for-the-badge)](https://github.com/gabriel-ezequiel/portfolio/issues){:target="_blank"}
-[Hello, world!](http://example.com/){ target="_blank"}
-[Google](https://google.com" ){:target="_blank"}
-[as](https://github.com/gabriel-ezequiel/portfolio/issues) {target="_blank"}
+[![Bitbucket open issues](https://img.shields.io/github/issues/gabriel-ezequiel/portfolio?style=for-the-badge)](https://github.com/gabriel-ezequiel/portfolio/issues)
+<a href="https://www.youtube.com/seu-canal-youtube-aqui" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gabriel-ezequiel/portfolio?style=for-the-badge)
 
 [![Contributors][contributors-shield]][contributors-url]
+<a href="https://github.com/gabriel-ezequiel/portfolio/graphs/contributors"><img src="https://img.shields.io/github/contributors/gabriel-ezequiel/portfolio.svg?style=for-the-badge" alt="Contributors"></a>
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
