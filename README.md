@@ -8,7 +8,9 @@
 
 <p><a href="https://www.youtube.com/seu-canal-youtube-aqui" target="_blank"><img loading="lazy" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a></p>
 
-<a href="example.com" target="_blank">New Tab</a>
+<a href="https://example.com" target="_blank">New Tab</a>
+
+<a href="https://example.com" target="_blank" rel="noopener noreferrer">New Tab</a>
 
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/gabriel-ezequiel/portfolio?style=for-the-badge)
 
