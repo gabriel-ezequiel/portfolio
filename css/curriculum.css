@@ -1,0 +1,36 @@
+body {
+    font: 12pt Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 24pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+h3 {
+    font-size: 14pt;
+}
+
+.col1 {
+    background-color: rgb(2, 82, 119);
+    height: 100%;
+    padding-top: 2%;
+}
+
+.col2 {
+    height: 100%;
+    padding-top: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fundo {
+    color: black;
+    background-color: rgb(2, 82, 119);
+    padding-bottom: 0px;
+    max-width: 992px;
+    margin: auto;
+}
