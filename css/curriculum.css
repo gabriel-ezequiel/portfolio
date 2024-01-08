@@ -34,3 +34,13 @@ h3 {
     max-width: 992px;
     margin: auto;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+}
+
+.wrapper>p {
+    margin: 0;
+}
