@@ -1,21 +1,69 @@
+/**
+ * Represents the username of the user.
+ * @type {string}
+ */
 var user = "gabriel-ezequiel";
+/**
+ * Represents the current page number.
+ * @type {number}
+ */
 var page = 1;
+/**
+ * Represents the current pagination of the API.
+ * @type {number}
+ */
 var page_api = 0;
+/**
+ * The number of items to display per page.
+ * @type {number}
+ */
 var per_page = 30;
+/**
+ * The maximum number of repositories allowed per API.
+ * @type {number}
+ */
+/**
+ * Maximum number of allowed repositories for API.
+ * @type {number}
+ */
 var max_per_repos_api = 90;
+/**
+ * Number of repositories.
+ * @type {number}
+ */
 var num_repos = 0;
+/**
+ * Array to store repositories.
+ * @type {Array}
+ */
 var repos = [];
+/**
+ * Array to store search results for repositories.
+ * @type {Array}
+ */
 var searchRepos = [];
+/**
+ * The search input variable.
+ * @type {string}
+ */
 var searchInput = "";
 var converter = new showdown.Converter();
 showdown.setFlavor('github');
 
+/**
+ * Fetches data from an API using the provided URL.
+ * @param {string} url - The URL of the API.
+ * @returns {Promise<Object>} - A promise that resolves to the fetched data.
+ */
 async function getAPI(url) {
   const response = await fetch(url);
   const data = await response.json();
   return data;
 }
 
+/**
+ * Retrieves repositories from the GitHub API based on the specified parameters.
+ */
 function getRepos() {
   getAPI(`https://api.github.com/users/${user}/repos?per_page=${max_per_repos_api}&page=${++page_api}&sort=created&direction=desc`).then(data => {
     repos = repos.concat(data);
@@ -25,6 +73,9 @@ function getRepos() {
   });
 }
 
+/**
+ * Creates a carousel based on data retrieved from the GitHub API.
+ */
 function createCarousel() {
   getAPI(`https://api.github.com/search/repositories?q=user%3Ao=desc&per_page=5&q=user%3A${user}&s=stars&type=Repositories`).then(data => {
     if (data.items[0].stargazers_count === 0) {
@@ -135,6 +186,13 @@ function createCarousel() {
   });
 }
 
+/**
+ * Creates cards for displaying repositories.
+ * 
+ * @param {Array} repos - The array of repositories.
+ * @param {number} start - The starting index of the slice.
+ * @param {number} end - The ending index of the slice.
+ */
 function createCards(repos, start, end) {
 
   var cards = document.getElementById("cards");
@@ -194,6 +252,10 @@ function createCards(repos, start, end) {
   cards.appendChild(createPagination());
 }
 
+/**
+ * Creates a pagination element with previous and next buttons, as well as page numbers.
+ * @returns {HTMLElement} The pagination element.
+ */
 function createPagination() {
   var nav = document.createElement("nav");
   nav.setAttribute("aria-label", "Navegação de página exemplo");
@@ -273,10 +335,16 @@ function createPagination() {
   return nav;
 }
 
+/**
+ * Goes to the previous page and updates the cards accordingly.
+ */
 function previousPage() {
   createCards(repos, per_page*(page-2), per_page*--page);
 }
 
+/**
+ * Go to the next page and display the corresponding cards.
+ */
 function nextPage() {
   createCards(repos, per_page*(page++), per_page*page);
   if (num_repos >= per_page*page) {
@@ -284,6 +352,11 @@ function nextPage() {
   }
 }
 
+/**
+ * Fetches the README.md file from a GitHub repository and populates the details section of the webpage.
+ * @param {string} nameRepo - The name of the GitHub repository.
+ * @param {string} defaultBranch - The default branch of the GitHub repository.
+ */
 function createDetails(nameRepo,defaultBranch) {
   fetch(`https://raw.githubusercontent.com/${user}/${nameRepo}/${defaultBranch}/README.md`).then(async response => {
     var details = document.getElementById("details");
@@ -309,6 +382,9 @@ function createDetails(nameRepo,defaultBranch) {
   });
 }
 
+/**
+ * Clears the details element, sets the page to 1, creates cards for the repositories, and scrolls to the top of the page.
+ */
 function project() {
   var details = document.getElementById("details");
   details.innerHTML = "";
@@ -317,6 +393,10 @@ function project() {
   window.scrollTo(0, 0);
 }
 
+/**
+ * Clears the details element, creates new cards based on the current page and displays them, 
+ * and scrolls the window to the top.
+ */
 function backPage() {
   var details = document.getElementById("details");
   details.innerHTML = "";
@@ -324,6 +404,9 @@ function backPage() {
   window.scrollTo(0, 0);
 }
 
+/**
+ * Performs a search based on the input value and updates the display with the search results.
+ */
 function search() {
   var input = document.getElementById("search").value;
   getAPI(`https://api.github.com/search/repositories?q=user%3A${user}+${input}`).then(data => {
@@ -336,6 +419,9 @@ function search() {
   console.log(input);
 }
 
+/**
+ * The main function that initializes the application.
+ */
 function main() {
   getRepos();
   createCarousel();
