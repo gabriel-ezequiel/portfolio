@@ -26,7 +26,7 @@ var per_page = 30;
  * Maximum number of allowed repositories for API.
  * @type {number}
  */
-var max_per_repos_api = 90;
+var max_per_repos_api = 90; // You must use a multiple of 3 of per_page and not exceed the value of 100
 /**
  * Number of repositories.
  * @type {number}
@@ -203,6 +203,14 @@ function createCards(repos, start, end) {
   row.style.padding = "10px";
 
   repos.slice(start, end).forEach(element => {
+    // improvisation to delete some repositories on the display
+    // improve this later
+    // this will result in several changes to the code
+    // desebled for now
+    // if (["project", "portfolio"].some(topic => element.topics.includes(topic))) {
+    //   return;
+    // }
+
     var col = document.createElement("div");
     col.classList.add("col-md-4")
     col.style.padding = "5px";
