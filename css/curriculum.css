@@ -15,24 +15,26 @@ h3 {
     font-size: 14pt;
 }
 
-.col1 {
-    background-color: rgb(2, 82, 119);
-    height: 100%;
-    padding-top: 2%;
-}
-
-.col2 {
-    height: 100%;
-    padding-top: 5%;
-    background-color: rgb(255, 255, 255);
-}
-
 .fundo {
     color: black;
-    background-color: rgb(2, 82, 119);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 0px;
+    padding: 10px;
     max-width: 992px;
     margin: auto;
+}
+
+.personal-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 650px) {
+    .personal-information {
+        flex-direction: column-reverse;
+    }
 }
 
 .wrapper {

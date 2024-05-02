@@ -1,11 +1,6 @@
 @page {
-    margin: 0;
+    size: A4;
     /* -webkit-print-color-adjust: exact;
     print-color-adjust: exact; */
     /* widows: 0; */
-}
-
-.col2 {
-    border-left: #000 1px solid;
-    height: 100vh;
 }
